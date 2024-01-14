@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+.editorconfig
+
+# Environment
+.env
+.env.test
+
+# Database
+db/*db
+
+# Build
+build

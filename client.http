@@ -1,0 +1,29 @@
+@baseURL = http://localhost:3333
+
+# @name transactions
+POST {{baseURL}}/transactions
+Content-Type: application/json
+
+{
+  "title": "frontend",
+  "amout": 600,
+  "type": "credit"
+}
+
+###
+
+# @name transactions
+GET {{baseURL}}/transactions
+Content-Type: application/json
+
+###
+
+# @name transactions
+GET {{baseURL}}/transactions/64d98fa0-812a-47d1-80fb-b8def53cdd11
+Content-Type: application/json
+
+###
+
+# @name summary
+GET {{baseURL}}/transactions/summary
+Content-Type: application/json
